@@ -1,5 +1,5 @@
 ##J-Markdown 1.0
-+ J-Markdown is a Markdown parser written in C++.It also a small and lightweight application created using
++ J-Markdown is a Markdown parser written in C++. It also a small and lightweight application created using
 QT 5.5.1, which satisfys all Syntaxs of original markdown presented in: [http://daringfireball.net/projects/markdown/syntax#list]
 (http://daringfireball.net/projects/markdown/syntax#list)
 
