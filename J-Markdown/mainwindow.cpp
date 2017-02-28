@@ -1,10 +1,20 @@
 #include <QtGui>
 #include "mainwindow.h"
 
-QString MainWindow::head_beg = "<html><head><style type=\"text/css\">",
-        MainWindow::head_end = "</style></head><body>",
-        MainWindow::tail = "</body></html>";
+//QString MainWindow::head_beg = "<html><head><style type=\"text/css\">",
+//        MainWindow::head_end = "</style></head><body>",
+//        MainWindow::tail = "</body></html>";
 
+QString MainWindow::head_beg = "<html><head><link rel=\"stylesheet\" href=\"github-markdown.css\">"
+        "<style>"
+            ".markdown-body {"
+               " box-sizing: border-box;"
+               " min-width: 200px;"
+               " max-width: 980px;"
+               " margin: 0 auto;"
+               " padding: 45px;}";
+QString MainWindow::head_end = "</style></head><body>";
+QString MainWindow::tail = "</body></html>";
 
 MainWindow::MainWindow(CHtmlRender render, QWidget *parent)
     :QMainWindow(parent),md(render),style()
@@ -85,7 +95,8 @@ void MainWindow::about()
     QMessageBox message(QMessageBox::NoIcon, tr("About Markdown"),
                         tr("<h2>J-Markdown 1.0</h2>"
                            "<p>J-Markdown is a Markdown parser and also a small application that "
-                           "satisfys all Syntax presented in: <a href=\"https://github.com/othree/markdown-syntax-zhtw\">https://github.com/othree/markdown-syntax-zhtw</a>"
+                           "satisfys all Syntax presented in: <a href=\"http://daringfireball.net/projects/markdown/syntax#list\">"
+                           "http://daringfireball.net/projects/markdown/syntax#list</a>"
                            ". It's free to use, copy, modify, and distribute this software for any "
                            "purpose with or without fee."
                            "<hr>"
