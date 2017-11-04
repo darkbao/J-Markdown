@@ -1,4 +1,4 @@
-##J-Markdown 1.0
+## J-Markdown 1.0
 
 ![](https://github.com/darkbao/Markdown/blob/master/J-md.png)
 
@@ -10,7 +10,7 @@ QT 5.5.1, which satisfys all Syntaxs of original markdown presented in: [http://
 (http://www.appinn.com/markdown/)
 
 
-##License
+## License
 It's free to use, copy, modify, and distribute this software for any purpose with or without fee.
 
 
